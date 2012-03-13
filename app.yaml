@@ -5,5 +5,12 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /res
+  static_dir: res
+
 - url: /.*
   script: joshleongengine.app
+
+libraries:
+- name: jinja2
+  version: latest
